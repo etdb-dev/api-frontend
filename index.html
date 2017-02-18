@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <title>ETdb</title>
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+
+    <body class-"index">
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top background-container">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">ETdb</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="col-sm-10 col-md-11">
+                        <input type="input" class="search" placeholder="Search..." id="search" autocomplete="off">
+                        <a class="btn btn-primary btn-search">
+                        <i class="material-icons search-icon">search</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+
+
+        <div class="container">
+            <div class="col-sm-10 col-md-11 search-suggest">
+                <div class="card" id="card">
+                    <div class="row">
+                        <p class="col-sm-6 col-md-6 label-suggest">
+                            Suggestions
+                        </p>
+                        <p class="col-sm-6 col-md-6 label-suggest">
+                            Recently viewed
+                        </p>
+                        <button class="col-sm-6 col-md-6 btn-suggest">
+                            Test
+                        </button>
+                        <button class="col-sm-6 col-md-6 btn-suggest">
+                            Test
+                        </button>
+                        <button class="col-sm-6 col-md-6 btn-suggest">
+                            Test
+                        </button>
+                        <button class="col-sm-6 col-md-6 btn-suggest">
+                            Test
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-body">
+            <div class="container">
+                <div class="content">
+                    <!-- Content goes here -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="label-api">APIs</p>
+                            <div class="row">
+                                <button class="col-sm-12 btn-api">
+                                    First
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label-api">Information</p>
+                            <div class="row">
+                                <div class="col-sm-12 btn-api">
+                                    First
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $("#search").focusin(
+                function () {
+                    $("#card").show();
+                }
+            );
+            $("#search").focusout(
+                function () {
+                    $("#card").hide();
+                }
+            );
+        </script>
+    </body>
+</html>
