@@ -113,6 +113,20 @@ body {
     background-color: #dedede;
 }
 
+.disabled {
+    background-color: #fff;
+    border: 0px;
+    text-align: left;
+    padding: 8px 8px 8px 18px;
+}
+
+.disabled:hover {
+    background-color: #fff;
+    border: 0px;
+    text-align: left;
+    padding: 8px 8px 8px 18px;
+}
+
 .label-suggest {
     margin-top: 10px;
     padding-left: 2px;
@@ -137,6 +151,7 @@ body {
     top: 0px!important;
     z-index: 0;
     position: absolute;
+    width: 100%;
 }
 
 .btn-api {

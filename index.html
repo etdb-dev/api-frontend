@@ -46,24 +46,6 @@
             <div class="col-sm-10 col-md-11 search-suggest">
                 <div class="card" id="card">
                     <div class="row">
-                        <p class="col-sm-6 col-md-6 label-suggest">
-                            Suggestions
-                        </p>
-                        <p class="col-sm-6 col-md-6 label-suggest">
-                            Recently viewed
-                        </p>
-                        <button class="col-sm-6 col-md-6 btn-suggest">
-                            Test
-                        </button>
-                        <button class="col-sm-6 col-md-6 btn-suggest">
-                            Test
-                        </button>
-                        <button class="col-sm-6 col-md-6 btn-suggest">
-                            Test
-                        </button>
-                        <button class="col-sm-6 col-md-6 btn-suggest">
-                            Test
-                        </button>
                     </div>
                 </div>
             </div>
@@ -74,7 +56,7 @@
                 <div class="content">
                     <!-- Content goes here -->
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <p class="label-api">APIs</p>
                             <div class="row">
                                 <button class="col-sm-12 btn-api">
@@ -82,7 +64,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-8">
                             <p class="label-api">Information</p>
                             <div class="row">
                                 <div class="col-sm-12 btn-api">
@@ -100,17 +82,6 @@
 
         <!-- Bootstrap Core JavaScript -->
         <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script>
-            $("#search").focusin(
-                function () {
-                    $("#card").show();
-                }
-            );
-            $("#search").focusout(
-                function () {
-                    $("#card").hide();
-                }
-            );
-        </script>
+        <script src="js/script.js"></script>
     </body>
 </html>
